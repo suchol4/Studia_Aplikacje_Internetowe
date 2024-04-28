@@ -4,7 +4,8 @@
         <title>No Sidebar - Escape Velocity by HTML5 UP</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="{$app_url}/assets/css/main.css">	
+        {*<link rel="stylesheet" href="{$app_url}/assets/css/main.css">*}
+        <link rel="stylesheet" href="{$conf->app_url}/assets/css/main.css">
     </head>
 
     <body class="no-sidebar is-preload">
@@ -21,8 +22,8 @@
                 <!-- Nav -->
                 <nav id="nav">
                     <ul>
-                        <li><a href="{$app_url}/index.php">Home</a></li>
-                        <li class="current"><a href="{$app_url}/index.php">Strona testowa</a></li>
+                        <li><a href="{$conf->app_url}/index.php">Home</a></li>
+                        <li class="current"><a href="{$conf->app_url}/index.php">Strona testowa</a></li>
                     </ul>
                 </nav>
 

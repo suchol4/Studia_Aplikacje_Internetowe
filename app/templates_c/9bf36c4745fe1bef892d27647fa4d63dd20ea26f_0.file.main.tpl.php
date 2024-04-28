@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.2, created on 2024-04-25 00:52:18
+/* Smarty version 4.5.2, created on 2024-04-29 00:31:39
   from 'C:\xampp\htdocs\kalkulator_bankowy\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.2',
-  'unifunc' => 'content_66298d22677fb0_63935022',
+  'unifunc' => 'content_662ece4b06b687_71911510',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9bf36c4745fe1bef892d27647fa4d63dd20ea26f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\kalkulator_bankowy\\templates\\main.tpl',
-      1 => 1713999102,
+      1 => 1714340063,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66298d22677fb0_63935022 (Smarty_Internal_Template $_smarty_tpl) {
+function content_662ece4b06b687_71911510 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -30,8 +30,8 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <title>No Sidebar - Escape Velocity by HTML5 UP</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
-/assets/css/main.css">	
+                <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/assets/css/main.css">
     </head>
 
     <body class="no-sidebar is-preload">
@@ -48,9 +48,9 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 <!-- Nav -->
                 <nav id="nav">
                     <ul>
-                        <li><a href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
+                        <li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /index.php">Home</a></li>
-                        <li class="current"><a href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
+                        <li class="current"><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /index.php">Strona testowa</a></li>
                     </ul>
                 </nav>
@@ -64,7 +64,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                     <!-- Content -->
                     <div id="content">
                         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_91728160066298d226770f6_33287373', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1427361814662ece4b06a351_52241568', 'content');
 ?>
 
                     </div>
@@ -75,7 +75,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_91728160066298d226
             <!-- Highlights -->
             
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_142455253766298d226779d1_47394668', 'Highlights');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2049901907662ece4b06ae36_83552659', 'Highlights');
 ?>
 
             
@@ -159,12 +159,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_142455253766298d22
     </body>
 </html><?php }
 /* {block 'content'} */
-class Block_91728160066298d226770f6_33287373 extends Smarty_Internal_Block
+class Block_1427361814662ece4b06a351_52241568 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_91728160066298d226770f6_33287373',
+    0 => 'Block_1427361814662ece4b06a351_52241568',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -174,12 +174,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'content'} */
 /* {block 'Highlights'} */
-class Block_142455253766298d226779d1_47394668 extends Smarty_Internal_Block
+class Block_2049901907662ece4b06ae36_83552659 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'Highlights' => 
   array (
-    0 => 'Block_142455253766298d226779d1_47394668',
+    0 => 'Block_2049901907662ece4b06ae36_83552659',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -4,7 +4,7 @@
 
 {block name=content}
     <section>
-        <form method="post" action="${$conf->app_url}/app/bankowy_calc.php" method="post">
+        <form action="{$conf->app_url}/app/bankowy_calc.php" method="post">
             <div class="row gtr-50">
                 <div class="col-6 col-12-small">
                     <input type="text" name="kwota" id="contact-name" placeholder="Kwota kredytu" value="{$form->kwota}" />

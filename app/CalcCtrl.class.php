@@ -85,9 +85,8 @@ class CalcCtrl {
             $this->result->result = round($capital + $interest);
 
             $this->msgs->addInfo('Wykonano kalkulacje kredytu. ');
-
-            $this->generateView();
         }
+        $this->generateView();
     }
 
     function generateView() {
@@ -96,15 +95,15 @@ class CalcCtrl {
         $smarty = new Smarty();
         $smarty->assign('conf', $conf);
 
-        $smarty->assign('app_url', _APP_URL);
-        $smarty->assign('root_path', _ROOT_PATH);
+        $smarty->assign('app_url', $conf->app_url);
+        $smarty->assign('root_path', $conf->root_path);
         $smarty->assign('page_title', 'Kalkulator bankowy');
         $smarty->assign('page_description', 'Utworzenie stroy wraz z szablonowaniem Labolatoria cz. 3');
         $smarty->assign('page_header', 'Szablony Jakub Dynowski');
 
         $smarty->assign('form', $this->form);
-        $smarty->assign('result', $this->result);
-        $smarty->assign('messages', $this->msgs);
+        $smarty->assign('res', $this->result);
+        $smarty->assign('msgs', $this->msgs);
 
         //Wywołanie szablonu
         $smarty->display($conf->root_path . '/app/bankowy_calc.tpl');

@@ -2,8 +2,8 @@
 
 require_once $conf->root_path . '/lib/smarty/Smarty.class.php';
 require_once $conf->root_path . '/lib/Messages.class.php';
-require_once $conf->root_path . '/app/CalcForm.class.php';
-require_once $conf->root_path . '/app/CalcResult.class.php';
+require_once $conf->root_path . '/app/calc/CalcForm.class.php';
+require_once $conf->root_path . '/app/calc/CalcResult.class.php';
 
 class CalcCtrl {
 
@@ -106,6 +106,6 @@ class CalcCtrl {
         $smarty->assign('msgs', $this->msgs);
 
         //Wywołanie szablonu
-        $smarty->display($conf->root_path . '/app/bankowy_calc.tpl');
+        $smarty->display($conf->root_path . '/app/calc/bankowy_calc.tpl');
     }
 }

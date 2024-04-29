@@ -1,10 +1,10 @@
-{extends file="../templates/main.tpl"}
+{extends file=$conf->root_path|cat:"/templates/main.tpl"}
 
 {block name=footer}przykładowa tresć stopki wpisana do szablonu głównego z szablonu kalkulatora{/block}
 
 {block name=content}
     <section>
-        <form action="{$conf->app_url}/app/bankowy_calc.php" method="post">
+        <form action="{$conf->action_root}calcCompute" method="post">
             <div class="row gtr-50">
                 <div class="col-6 col-12-small">
                     <input type="text" name="kwota" id="contact-name" placeholder="Kwota kredytu" value="{$form->kwota}" />

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.2, created on 2024-05-13 20:19:20
+/* Smarty version 4.5.2, created on 2024-05-22 18:03:03
   from 'C:\xampp\htdocs\kalkulator_bankowy\app\views\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.2',
-  'unifunc' => 'content_664259a8cbf188_96445503',
+  'unifunc' => 'content_664e173797c776_76432326',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1d210bf285dcdee9711395567b30f20219192918' => 
     array (
       0 => 'C:\\xampp\\htdocs\\kalkulator_bankowy\\app\\views\\templates\\main.tpl',
-      1 => 1714340063,
+      1 => 1716393781,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_664259a8cbf188_96445503 (Smarty_Internal_Template $_smarty_tpl) {
+function content_664e173797c776_76432326 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -46,25 +46,25 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 </div>
 
                 <!-- Nav -->
-                <nav id="nav">
-                    <ul>
-                        <li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/index.php">Home</a></li>
-                        <li class="current"><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/index.php">Strona testowa</a></li>
-                    </ul>
-                </nav>
+                <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_590679520664e173797b047_31264397', 'Nav');
+?>
+
+                
 
             </section>
 
             <!-- Main -->
             <div id="main" class="wrapper style2">
-                <div class="title">Kalkulator</div>
+                <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_306458327664e173797b849_15305513', 'DataView');
+?>
+
                 <div class="container">
                     <!-- Content -->
                     <div id="content">
                         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_921150929664259a8cbe495_46252335', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_979035275664e173797bd82_18874170', 'content');
 ?>
 
                     </div>
@@ -75,7 +75,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_921150929664259a8c
             <!-- Highlights -->
             
             <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1937106547664259a8cbebf1_49307945', 'Highlights');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1256446590664e173797c2a9_85272173', 'Highlights');
 ?>
 
             
@@ -158,13 +158,39 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1937106547664259a8
         
     </body>
 </html><?php }
+/* {block 'Nav'} */
+class Block_590679520664e173797b047_31264397 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'Nav' => 
+  array (
+    0 => 'Block_590679520664e173797b047_31264397',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+}
+}
+/* {/block 'Nav'} */
+/* {block 'DataView'} */
+class Block_306458327664e173797b849_15305513 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'DataView' => 
+  array (
+    0 => 'Block_306458327664e173797b849_15305513',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+}
+}
+/* {/block 'DataView'} */
 /* {block 'content'} */
-class Block_921150929664259a8cbe495_46252335 extends Smarty_Internal_Block
+class Block_979035275664e173797bd82_18874170 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_921150929664259a8cbe495_46252335',
+    0 => 'Block_979035275664e173797bd82_18874170',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -174,17 +200,15 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'content'} */
 /* {block 'Highlights'} */
-class Block_1937106547664259a8cbebf1_49307945 extends Smarty_Internal_Block
+class Block_1256446590664e173797c2a9_85272173 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'Highlights' => 
   array (
-    0 => 'Block_1937106547664259a8cbebf1_49307945',
+    0 => 'Block_1256446590664e173797c2a9_85272173',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
- Domyślna treść zawartości .... <?php
 }
 }
 /* {/block 'Highlights'} */

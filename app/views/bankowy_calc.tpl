@@ -1,6 +1,21 @@
 {*{extends file=$conf->root_path|cat:"/templates/main.tpl"}*}
 {extends file="main.tpl"}
 
+{block name=Nav}
+    <nav id="nav">
+        <ul>
+            <li><a href="{$conf->app_url}/index.php">Home</a></li>
+            <li class="current"><a href="{$conf->app_url}/index.php">Strona testowa</a></li>
+            <li class="current"><a href="{$conf->action_url}logout">Wyloguj</a></li>
+        </ul>
+    </nav>
+{/block}
+
+{block name=DataView}
+    <div class="title">Kalkulator</div>
+    <p id="logo">Zalogowano użytkownika: {$user->login} </p>
+{/block}
+
 {block name=footer}przykładowa tresć stopki wpisana do szablonu głównego z szablonu kalkulatora{/block}
 
 {block name=content}

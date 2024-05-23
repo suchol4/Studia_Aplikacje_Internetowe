@@ -73,7 +73,7 @@ class CalcCtrl {
     /**
      * Pobranie wartości, walidacja, obliczenie i wyświetlenie
      */
-    public function process() {
+    public function action_calcCompute() {
 
         $this->getParams();
 
@@ -98,13 +98,17 @@ class CalcCtrl {
 
         $this->generateView();
     }
+    
+    public function action_calcShow() {
+        getMessages()->addInfo('Witaj w kalkulatorze');
+        $this->generateView();
+    }
 
     /**
      * Wygenerowanie widoku
      */
-    public function generateView() {
-        //nie trzeba już tworzyć Smarty i przekazywać mu konfiguracji i messages
-        // - wszystko załatwia funkcja getSmarty()
+    public function generateView() {  
+        getSmarty()->assign('user',unserialize($_SESSION['user']));
 
         getSmarty()->assign('page_title', 'Kalkulator bankowy');
         getSmarty()->assign('page_description', 'Utworzenie stroy wraz z szablonowaniem Labolatoria cz. 3');

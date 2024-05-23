@@ -20,18 +20,14 @@
                 </div>
 
                 <!-- Nav -->
-                <nav id="nav">
-                    <ul>
-                        <li><a href="{$conf->app_url}/index.php">Home</a></li>
-                        <li class="current"><a href="{$conf->app_url}/index.php">Strona testowa</a></li>
-                    </ul>
-                </nav>
+                {block name=Nav}{/block}
+                
 
             </section>
 
             <!-- Main -->
             <div id="main" class="wrapper style2">
-                <div class="title">Kalkulator</div>
+                {block name=DataView}{/block}
                 <div class="container">
                     <!-- Content -->
                     <div id="content">
@@ -43,7 +39,7 @@
 
             <!-- Highlights -->
             
-            {block name=Highlights} Domyślna treść zawartości .... {/block}
+            {block name=Highlights}{/block}
             
             <!-- Footer -->
             <section id="footer" class="wrapper">

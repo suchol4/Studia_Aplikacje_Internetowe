@@ -95,6 +95,38 @@ class CalcCtrl {
 
             getMessages()->addInfo('Wykonano kalkulacje kredytu. ');
         }
+        
+        try {
+            $database = new \Medoo\Medoo([
+                // [required]
+                'type' => 'mysql',
+                'host' => 'localhost',
+                'database' => 'calc',
+                'username' => 'root',
+                'password' => '',
+                // [optional]
+                'charset' => 'utf8',
+                'collation' => 'utf8_polish_ci',
+                'port' => 3306,
+                'option' => [
+                    \PDO::ATTR_CASE => \PDO::CASE_NATURAL,
+                    \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
+                ],
+            ]);
+
+            $database->insert("wynik", [          //wynik jest to nazwa kolumny z id
+                "kwota" => $this->form->kwota,
+                "lat" => $this->form->lata,
+                "procent" => $this->form->procent,
+                "rata" => $this->result->result,
+                "data" => date("Y-m-d H:i:s"),
+            ]);
+            
+            
+        } catch (\PDOException $ex) {
+            getMessages()->addError("DB error: ".$ex->getMessage());
+        }
+
 
         $this->generateView();
     }

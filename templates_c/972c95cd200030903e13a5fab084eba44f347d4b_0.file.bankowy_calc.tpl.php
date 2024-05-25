@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.2, created on 2024-05-22 18:10:00
+/* Smarty version 4.5.2, created on 2024-05-24 17:31:07
   from 'C:\xampp\htdocs\kalkulator_bankowy\app\views\bankowy_calc.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.2',
-  'unifunc' => 'content_664e18d8337901_18192461',
+  'unifunc' => 'content_6650b2bbbeedf6_59298553',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '972c95cd200030903e13a5fab084eba44f347d4b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\kalkulator_bankowy\\app\\views\\bankowy_calc.tpl',
-      1 => 1716394198,
+      1 => 1716564664,
       2 => 'file',
     ),
   ),
@@ -20,73 +20,43 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_664e18d8337901_18192461 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6650b2bbbeedf6_59298553 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
+
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1304185211664e18d8329370_28027882', 'Nav');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8297536096650b2bbbdc256_86814008', 'DataView');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1623147152664e18d832c9b0_83200639', 'DataView');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7064150356650b2bbbdf452_45514365', 'footer');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_131988195664e18d832d3b5_57330610', 'footer');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20491321506650b2bbbdfa33_09921775', 'content');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1280650763664e18d832d8d3_56373027', 'content');
-?>
-
-
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1433750314664e18d83366c9_40793845', 'Highlights');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4244012276650b2bbbed649_52916243', 'Highlights');
 ?>
 
 
 
-<?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
+<?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main_sidebar.tpl");
 }
-/* {block 'Nav'} */
-class Block_1304185211664e18d8329370_28027882 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'Nav' => 
-  array (
-    0 => 'Block_1304185211664e18d8329370_28027882',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-    <nav id="nav">
-        <ul>
-            <li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/index.php">Home</a></li>
-            <li class="current"><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
-/index.php">Strona testowa</a></li>
-            <li class="current"><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
-logout">Wyloguj</a></li>
-        </ul>
-    </nav>
-<?php
-}
-}
-/* {/block 'Nav'} */
 /* {block 'DataView'} */
-class Block_1623147152664e18d832c9b0_83200639 extends Smarty_Internal_Block
+class Block_8297536096650b2bbbdc256_86814008 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'DataView' => 
   array (
-    0 => 'Block_1623147152664e18d832c9b0_83200639',
+    0 => 'Block_8297536096650b2bbbdc256_86814008',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -100,12 +70,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'DataView'} */
 /* {block 'footer'} */
-class Block_131988195664e18d832d3b5_57330610 extends Smarty_Internal_Block
+class Block_7064150356650b2bbbdf452_45514365 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer' => 
   array (
-    0 => 'Block_131988195664e18d832d3b5_57330610',
+    0 => 'Block_7064150356650b2bbbdf452_45514365',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -115,12 +85,12 @@ przykładowa tresć stopki wpisana do szablonu głównego z szablonu kalkulatora
 }
 /* {/block 'footer'} */
 /* {block 'content'} */
-class Block_1280650763664e18d832d8d3_56373027 extends Smarty_Internal_Block
+class Block_20491321506650b2bbbdfa33_09921775 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1280650763664e18d832d8d3_56373027',
+    0 => 'Block_20491321506650b2bbbdfa33_09921775',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -200,12 +170,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'content'} */
 /* {block 'Highlights'} */
-class Block_1433750314664e18d83366c9_40793845 extends Smarty_Internal_Block
+class Block_4244012276650b2bbbed649_52916243 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'Highlights' => 
   array (
-    0 => 'Block_1433750314664e18d83366c9_40793845',
+    0 => 'Block_4244012276650b2bbbed649_52916243',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

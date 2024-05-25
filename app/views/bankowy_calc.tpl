@@ -1,15 +1,15 @@
 {*{extends file=$conf->root_path|cat:"/templates/main.tpl"}*}
-{extends file="main.tpl"}
+{extends file="main_sidebar.tpl"}
 
-{block name=Nav}
+{*{block name=Nav}
     <nav id="nav">
         <ul>
             <li><a href="{$conf->app_url}/index.php">Home</a></li>
-            <li class="current"><a href="{$conf->app_url}/index.php">Strona testowa</a></li>
+            <li class="current"><a href="{$conf->action_root}tableView"">Tabela</a></li>
             <li class="current"><a href="{$conf->action_url}logout">Wyloguj</a></li>
         </ul>
     </nav>
-{/block}
+{/block}*}
 
 {block name=DataView}
     <div class="title">Kalkulator</div>
